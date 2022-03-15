@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             else{
                 message.setText("Wow! You Guessed Correct!")
             }
-            computerNum.setText(randNum.toString())
+            computerNum.setText("PC guessed Number: "+randNum.toString())
         }
 
     }
