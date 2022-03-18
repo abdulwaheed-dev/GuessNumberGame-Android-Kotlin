@@ -19,9 +19,11 @@ class MainActivity : AppCompatActivity() {
         var btn = findViewById<Button>(R.id.button)
         var computerNum = findViewById<TextView>(R.id.textView2)
 
+        var randNum = (1..100).random()
+
         btn.setOnClickListener(){
             var guessedNum = Integer.parseInt((userNum.text).toString())
-            var randNum = (1..100).random()
+//            var randNum = (1..100).random()
             if(guessedNum < randNum){
                 message.setText("Your Guess was less than computer guess")
             }
